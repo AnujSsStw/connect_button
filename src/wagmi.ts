@@ -29,14 +29,12 @@ export const config = getDefaultConfig({
   ssr: true,
   wallets: [
     {
-      groupName: "Recommended",
-      wallets: [
-        rainbowWallet,
-        walletConnectWallet,
-        metaMaskWallet,
-        binanceWallet,
-        coinbaseWallet,
-      ],
+      groupName: "Popular",
+      wallets: [metaMaskWallet, coinbaseWallet],
+    },
+    {
+      groupName: "More",
+      wallets: [walletConnectWallet, binanceWallet, rainbowWallet],
     },
   ],
 });
